@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content = "IE=edge"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>DulciWeb - Insertar Producto</title>
+
+        <link rel="stylesheet" href="../../Css/style.css">
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><span>D</span>ulciWeb</a>
+            <nav class="navbar">
+                <a href="../Admin/AdminProductos.html">Productos administración</a>
+                <a href="../Admin/AdminPromo.html">Promociones administración</a>
+                <a href="../Admin/usuarios.html">Usuarios administración</a>
+            </nav>
+            
+            <div class="login">
+                <a onclick="cerrarSesion()">Cerrar Sesión</a>
+                <i class="fas fa-user" id="login-btn"></i>
+            </div>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <div></div>
+        </header>
+        <div class="separacion"></div>
+        
+        <section class="insertar">
+            <h1>Inserción los productos</h1>
+            <div class="formulario">
+                <form id="insertProduct">
+                    <div>
+                        <label for="idproducto">ID del producto</label> <br>
+                        <input class="id" id="idproducto" placeholder="totisBLS"></input>
+                    </div>
+                    <div>
+                        <label for="producto">Nombre del producto</label> <br>
+                        <input id="producto" placeholder="Bolsa Totis"></input>
+                    </div>
+                    <div>
+                        <label for="marca">Marca del producto</label> <br>
+                        <input id="marca" placeholder="totis"></input>
+                    </div>
+                    <div>
+                        <label for="contenido">Contenido del producto</label> <br>
+                        <input id="contenido" placeholder="50 minipaquetes"></input>
+                    </div>
+                    <div>
+                        <label for="precio">Precio del producto</label> <br>
+                        <input id="precio" placeholder="60"></input>
+                    </div>
+                    <div>
+                        <label for="stock">Stock en negocio</label> <br>
+                        <input id="stock" placeholder="15"></input>
+                    </div>
+                </form> 
+                <div class="formBoton">
+                    <form id="uploadForm" enctype="multipart/form-data">
+                        <input type="file" name="file" id="file" accept=".jpg, .jpeg, .png" onchange="arch(event)">
+                        <button type="button" onclick="subirArchivo()">Subir Archivo</button>
+                    </form>
+                    <button id="buttonInsert">Insertar producto</button>
+                    <button id="buttonBack">Regresar a administración</button>
+                </div>
+            </div>
+        </section>
+
+        <!--Seccion para el pie de pagina (footer) -->
+        <section class="footer">
+            <div class="footer-contenedor">
+                <div class="contenedor">
+                    <h3>Nuestro sitio web</h3>
+                    <a href="../Admin/AdminProductos.html" > <i class="fas fa-angle-right"></i>Productos administración</a>
+                    <a href="../Admin/AdminPromo.html" > <i class="fas fa-angle-right"></i> Promociones administración</a>
+                    <a href="../Admin/usuarios.html" > <i class="fas fa-angle-right"></i> Usuarios administración</a>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Accede</h3>
+                    <a onclick="cerrarSesion()"> <i class="fas fa-angle-right"></i>Cerrar sesión</a>
+                    
+                </div>
+
+                <div class="contenedor" id="contactanos">
+                    <h3>Contactanos</h3>
+                    <a href="#"> <i class="fas fa-phone"></i>+52-477-715-09-58</a>
+                    <a href="#"> <i class="fas fa-phone"></i>+52-477-981-65-92</a>
+                    <a href="#"> <i class="fas fa-envelope"></i>lopezrosamaria5691@gmail.com</a>
+                    <a href="#"> <i class="fas fa-map"></i>León, Guanajuato - 37410</a>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Redes sociales ????</h3>
+                    <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i>facebook</a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i>twitter</a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>instagram</a>
+                    <a href="https://www.youtube.com/@ourplanet4k"><i class="fab fa-youtube"></i>youtube</a>
+                </div>
+            </div>
+            <div class="creditos"> © Copyright 2023 <span>AMAGLT</span> - Todos los Derechos Reservados. </div>
+        </section>   
+
+    <script src="../../Js/Admin/scriptInsercionProducts.js"></script>
+    <script src="../../Js/Public/ScriptMenu.js"></script>
+    </body>
+</html>

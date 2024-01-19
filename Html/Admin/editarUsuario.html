@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DulciWeb - Editar Usuario</title>
+    <link rel="stylesheet" href="../../Css/style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo"><span>D</span>ulciWeb</a>
+        <nav class="navbar">
+            <a href="../Admin/AdminProductos.html">Productos administración</a>
+            <a href="../Admin/AdminPromo.html">Promociones administración</a>
+            <a href="../Admin/usuarios.html">Usuarios administración</a>
+        </nav>
+        
+        <div class="login">
+            <a onclick="cerrarSesion()">Cerrar Sesión</a>
+            
+            <i class="fas fa-user" id="login-btn"></i>
+        </div>
+
+        <div id="menu-bar" class="fas fa-bars"></div>
+        <div></div>
+    </header>
+    <div class="separacion"></div>
+
+    <section class="modificar">
+
+        <div class="modifica">
+
+            <h1>Editar usuario</h1>
+        
+            <div class="formulario">
+                <form id="editarForm">
+                    <div>
+                        <label for="id">Id del usuario</label> <br>
+                        <input id="id" readonly></input>
+                    </div>
+                    <div>
+                        <label for="nombre">Nombre del Usuario</label> <br>
+                        <input id="nombre"></input>
+                    </div>
+                    <div>
+                        <label for="pass">Contraseña del Usuario</label> <br>
+                        <input id="pass"></input>
+                    </div>
+                    <div>
+                        <input class="f" type="button" id="buttonUpdate" onclick=actualizar() value="Modificar"></input>
+                        <input class="f" type="button" id="buttonDelete" onclick=eliminar() value="Eliminar"></input>
+                        <input class="f" type="button" id="buttonBack" onclick=regresar() value="Cancelar"></input>
+                    </div>
+                </form>
+            </div>
+
+        </div>    
+    </section>
+
+    <!--Seccion para el pie de pagina (footer) -->
+    <section class="footer">
+        <div class="footer-contenedor">
+            <div class="contenedor">
+                <h3>Nuestro sitio web</h3>
+                <a href="../Admin/AdminProductos.html" > <i class="fas fa-angle-right"></i>Productos administración</a>
+                <a href="../Admin/AdminPromo.html" > <i class="fas fa-angle-right"></i> Promociones administración</a>
+                <a href="../Admin/usuarios.html" > <i class="fas fa-angle-right"></i> Usuarios administración</a>
+            </div>
+
+            <div class="contenedor">
+                <h3>Accede</h3>
+                <a onclick="cerrarSesion()"> <i class="fas fa-angle-right"></i>Cerrar sesión</a>
+                <a >Cerrar Sesión</a>
+            </div>
+
+            <div class="contenedor" id="contactanos">
+                <h3>Contactanos</h3>
+                <a href="#"> <i class="fas fa-phone"></i>+52-477-715-09-58</a>
+                <a href="#"> <i class="fas fa-phone"></i>+52-477-981-65-92</a>
+                <a href="#"> <i class="fas fa-envelope"></i>lopezrosamaria5691@gmail.com</a>
+                <a href="#"> <i class="fas fa-map"></i>León, Guanajuato - 37410</a>
+            </div>
+
+            <div class="contenedor">
+                <h3>Redes sociales ????</h3>
+                <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i>facebook</a>
+                <a href="https://twitter.com/"><i class="fab fa-twitter"></i>twitter</a>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>instagram</a>
+                <a href="https://www.youtube.com/@ourplanet4k"><i class="fab fa-youtube"></i>youtube</a>
+            </div>
+        </div>
+        <div class="creditos"> © Copyright 2023 <span>AMAGLT</span> - Todos los Derechos Reservados. </div>
+    </section>
+
+    <script src="../../Js/Public/ScriptMenu.js"></script>
+    <script src="../../Js/Admin/editar.js"></script>
+</body>
+</html>

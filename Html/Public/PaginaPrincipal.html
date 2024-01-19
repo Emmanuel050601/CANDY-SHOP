@@ -1,0 +1,184 @@
+<!--
+    AUTORES:
+-->
+
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>DulciWeb</title>
+
+        <!--Archivos css externos-->
+        <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- Archivo css creado personalizable-->
+        <link rel="stylesheet" type="text/css" href="../../Css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <a href="#" class="logo"><span>D</span>ulciWeb</a>
+            <nav class="navbar">
+                <a href="../Public/Promociones.html">Promociones</a>
+                <a href="../Public/Productos.html">Productos</a>
+                <a href="../Public/AcercaNosotros.html">Acerca de </a>
+                <a href="../Public/Contactanos.html">Contáctanos</a>
+            </nav>
+            
+            <div class="login">
+                <a href="../Public/Accede.html">Iniciar Sesión</a>
+                <i class="fas fa-user" id="login-btn"></i>
+            </div>
+
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <div></div>
+        </header>
+
+        <!--Seccion de inicio -> Carrusel de imagenes-->
+        <section class="inicio" id="inicio">
+            <div class="swiper inicio-slider">  
+                <div class="swiper-wrapper"> 
+                
+                    <div class="swiper-slide slide" style="background:url(../../Images/dulceria.jpeg) no-repeat">
+                        <div class="content">
+                            <span>LOS MEJORES PRECIOS Y LA MEJOR CALIDAD</span>
+                            <h3>PRODUCTOS</h3>
+                            <a href="../Public/Productos.html" class="btn">Ir a Productos</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide" style="background:url(../../Images/Dulceriael2.jpg) no-repeat">
+                        <div class="content">
+                            <span>BUSCAS EL MEJOS SERVICIO</span>
+                            <h3>CONTÁCTANOS</h3>
+                            <a href="../Public/Contactanos.html" class="btn">Ir a Contáctanos</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide" style="background:url(../../Images/dulceria3.jpg) no-repeat">
+                        <div class="content">
+                            <span>QUIERES SABER MAS SOBRE NOSOTROS</span>
+                            <h3>Conocenos</h3>
+                            <a href="../Public/AcercaNosotros.html" class="btn">Ir a acerca de</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+
+        <section class="promociones" id="promociones"> 
+            <h1 class="heading">
+                <span>P</span> 
+                <span>R</span> 
+                <span>O</span> 
+                <span>M</span> 
+                <span>O</span>
+                <span>C</span>
+                <span>I</span>
+                <span>O</span>
+                <span>N</span>
+                <span>E</span>
+                <span>S</span>
+            </h1>
+
+            <div id="box-container" class="box-container">  </div>
+
+        </section>
+
+        <!--Seccion de productos -> Carrusel de imagenes-->
+        <section class="productos" id="productos">
+            <div class="swiper productos-slider">  
+                <div class="swiper-wrapper"> 
+                
+                    <div class="swiper-slide slide" style="background:url(../../Images/dulceria.jpeg) no-repeat">
+                        <div class="content">
+                            <h3>PRODUCTOS</h3>
+                            <a href="../Public/Productos.html" class="btn">Ir a productos</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide" style="background:url(../../Images/Dulceriael2.jpg) no-repeat">
+                        <div class="content">
+                            <h3>PRODUCTOS</h3>
+                            <a href="../Public/Productos.html" class="btn">Ir a productos</a>
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide slide" style="background:url(../../Images/dulceria3.jpg) no-repeat">
+                        <div class="content">
+                            <h3>PRODUCTOS</h3>
+                            <a href="../Public/Productos.html" class="btn">Ir a productos</a>
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+        </section>
+        
+        <!--Seccion acerca de nosotros -->
+        <section class="inicio-acerca" id="acerca">
+            <div class="imagen">
+                <img src="../../Images/dulceria4.JPG" alt="">
+            </div>
+
+            <div class="content">
+                <h3>Acerca de nosotros</h3>
+                <p> En Dulcería Vicky, nuestra pasión es satisfacer tus antojos 
+                    de dulces y golosinas de la manera más deliciosa. Fundada en 1990, 
+                    nos enorgullece ser un punto de referencia en la comunidad de Los Olivos
+                    para todo lo relacionado con el mundo de los dulces.  </p>
+                <a href="../Public/AcercaNosotros.html" class="btn">conoce más</a>
+            </div>
+        </section>
+
+        <!--Seccion para el pie de pagina (footer) -->
+        <section class="footer">
+            <div class="footer-contenedor">
+                <div class="contenedor">
+                    <h3>Nuestro sitio web</h3>
+                    <a href="../Public/PaginaPrincipal.html"> <i class="fas fa-angle-right"></i>Inicio</a>
+                    <a href="../Public/Promociones.html"> <i class="fas fa-angle-right"></i>Promociones</a>
+                    <a href="../Public/Productos.html"> <i class="fas fa-angle-right"></i>Productos</a>
+                    <a href="../Public/AcercaNosotros.html"> <i class="fas fa-angle-right"></i>Acerca de</a>
+                    <a href="../Public/Contactanos.html"> <i class="fas fa-angle-right"></i>Contáctanos</a>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Accede</h3>
+                    <a href="../Public/Accede.html"> <i class="fas fa-angle-right"></i>Iniciar sesión</a>
+                    <a href="../Public/Accede.html"> <i class="fas fa-angle-right"></i>Registrarse</a>
+                </div>
+
+                <div class="contenedor" id="contactanos">
+                    <h3>Contactanos</h3>
+                    <a href="#"> <i class="fas fa-phone"></i>+52-477-715-09-58</a>
+                    <a href="#"> <i class="fas fa-phone"></i>+52-477-981-65-92</a>
+                    <a href="#"> <i class="fas fa-envelope"></i>lopezrosamaria5691@gmail.com</a>
+                    <a href="#"> <i class="fas fa-map"></i>León, Guanajuato - 37410</a>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Redes sociales ????</h3>
+                    <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i>facebook</a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i>twitter</a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>instagram</a>
+                    <a href="https://www.youtube.com/@ourplanet4k"><i class="fab fa-youtube"></i>youtube</a>
+                </div>
+            </div>
+            <div class="creditos"> © Copyright 2023 <span>AMAGLT</span> - Todos los Derechos Reservados. </div>
+        </section>
+
+        <!-- Script para la animacion del carrusel, en este caso hacemos uso de un js externo -->
+        <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+        <!-- Script escrito por mi-->
+        <script type="text/javascript" src="../../Js/Public/ScriptMenu.js"></script>
+        <script type="text/javascript" src="../../Js/Public/ScriptInicio.js"></script>
+    </body>
+</html>

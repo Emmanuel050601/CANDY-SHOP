@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>DulciWeb - Contáctanos</title>
+
+        <!--Archivos css externos-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+        <!-- Archivo css creado personalizable-->
+        <link rel="stylesheet" type="text/css" href="../../Css/style.css"/>
+    </head>
+    <body>
+        <header>
+            <a href="../../index.html" class="logo"><span>D</span>ulciWeb</a>
+            <nav class="navbar">
+                <a href="../Public/Promociones.html">Promociones</a>
+                <a href="../Public/Productos.html">Productos</a>
+                <a href="../Public/AcercaNosotros.html">Acerca de </a>
+                <a href="../Public/Contactanos.html">Contáctanos</a>
+            </nav>
+            <div class="login">
+                <a href="../Public/Accede.html">Iniciar Sesión</a>
+                <i class="fas fa-user" id="login-btn"></i>
+            </div>
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <div></div>
+        </header>
+        
+        <div class="cabecera" style="background: url(../../Images/dulceria4.JPG) no-repeat">
+            <div class="opacidad"></div>
+            <h1>contáctanos</h1>
+        </div>
+
+        <section class="visitanos" id="visitanos">
+            <h1 class="heading">
+                <span>v</span> 
+                <span>i</span> 
+                <span>s</span> 
+                <span>í</span> 
+                <span>t</span>
+                <span>a</span>
+                <span>n</span>
+                <span>o</span>
+                <span>s</span>
+            </h1>
+            <div class="visita" id="visita">
+                <div class="mapa">  
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4880.258961500597!2d-101.70209052381803!3d21.
+                    11316468487249!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842bbf824909d6eb%3A0x7f2dc9ed9d8a5f59!2sManuela%20
+                    Bustamante%20119%2C%20Los%20Olivos%2C%2037410%20Le%C3%B3n%2C%20Gto.!5e1!3m2!1ses-419!2smx!4v1699500081265!5m2!1ses-419!
+                    2smx" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="content">
+                    <h2>DULCERIA VICKY</h2>
+                    <h3> Dirección</h3>  
+                    <p>
+                        Calle Manuela Bustamante # 119, Los Olivos, C.P. 37410<br/>
+                        Teléfono: 477-715-09-58 <br/>
+                        Correo electrónico: lopezrosamaria5691@gmail.com
+                    </p> 
+                    <h3>Referencia</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Perspiciatis eligendi soluta culpa esse, cumque laudantium corrupti
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="contactanos">
+            <h1 class="heading">
+                <span>c</span> 
+                <span>o</span> 
+                <span>n</span> 
+                <span>t</span> 
+                <span>á</span>
+                <span>c</span>
+                <span>t</span>
+                <span>a</span>
+                <span>n</span>
+                <span>o</span>
+                <span>s</span>
+            </h1>
+            <form class="form-contactanos">
+                <div class="contacto">
+                    <input type="text" name="nombre" class="nombre" id="nombre" placeholder="Nombre de contacto">
+                    <div class="separacion"></div>
+                    <input type="text" name="telefono" class="telefono" id="telefono" placeholder="Telefono">
+                </div>
+
+                <input type="email" name="email" class="correo" id="email" placeholder="Correo electrónico">
+                <input type="text" name="asunto" class="asunto" id="asunto" placeholder="Asunto">
+                <textarea name="mensaje" class="mensaje" id="mensaje" placeholder="Mensaje"> </textarea>
+
+                <button type="button" id="btn" onclick="enviarMail()">Enviar</button>
+            </form>
+
+        </section>
+
+        <!--Seccion para el pie de pagina (footer) -->
+        <section class="footer">
+            <div class="footer-contenedor">
+                <div class="contenedor">
+                    <h3>Nuestro sitio web</h3>
+                    <a href="../Public/PaginaPrincipal.html"> <i class="fas fa-angle-right"></i>Inicio</a>
+                    <a href="../Public/Promociones.html"> <i class="fas fa-angle-right"></i>Promociones</a>
+                    <a href="../Public/Productos.html"> <i class="fas fa-angle-right"></i>Productos</a>
+                    <a href="../Public/AcercaNosotros.html"> <i class="fas fa-angle-right"></i>Acerca de</a>
+                    <a href="../Public/Contactanos.html"> <i class="fas fa-angle-right"></i>Contáctanos</a>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Accede</h3>
+                    <a href="../Public/Accede.html"> <i class="fas fa-angle-right"></i>Iniciar sesión</a>
+                    <a href="../Public/Accede.html"> <i class="fas fa-angle-right"></i>Registrarse</a>
+                </div>
+
+                <div class="contenedor" id="contactanos">
+                    <h3>Contáctanos</h3>
+                    <a href="#"> <i class="fas fa-phone"></i>+52-477-715-09-58</a>
+                    <a href="#"> <i class="fas fa-phone"></i>+52-477-981-65-92</a>
+                    <a href="#"> <i class="fas fa-envelope"></i>lopezrosamaria5691@gmail.com</a>
+                    <a href="#"> <i class="fas fa-map"></i>León, Guanajuato - 37410</a>
+                </div>
+
+                <div class="contenedor">
+                    <h3>Redes sociales ????</h3>
+                    <a href="https://es-la.facebook.com/"><i class="fab fa-facebook-f"></i>facebook</a>
+                    <a href="https://twitter.com/"><i class="fab fa-twitter"></i>twitter</a>
+                    <a href="https://www.instagram.com/"><i class="fab fa-instagram"></i>instagram</a>
+                    <a href="https://www.youtube.com/@ourplanet4k"><i class="fab fa-youtube"></i>youtube</a>
+                </div>
+            </div>
+            <div class="creditos"> © Copyright 2023 <span>AMAGLT</span> - Todos los Derechos Reservados. </div>
+        </section>
+
+        <!-- Script escrito por mi-->
+        <script type="text/javascript" src="../../Js/Public/ScriptMenu.js"></script>
+        <script type="text/javascript" src="../../Js/Public/ScriptFormulario.js"></script>
+        
+    </body>
+
+</html>
